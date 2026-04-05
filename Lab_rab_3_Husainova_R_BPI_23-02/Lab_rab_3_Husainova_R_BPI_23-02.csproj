@@ -180,6 +180,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Vegetables\FirstViewMethod.cshtml" />
+    <Content Include="Views\Vegetables\SecondViewMethod.cshtml" />
+    <Content Include="Views\Vegetables\ThirdViewMethod.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

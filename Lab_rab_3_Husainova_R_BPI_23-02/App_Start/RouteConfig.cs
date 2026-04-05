@@ -18,7 +18,7 @@ namespace Lab_rab_3_Husainova_R_BPI_23_02
              url: "{controller}/{action}/{id}",
              defaults: new
              {
-                 controller = " VegetablesController ",
+                 controller = "Vegetables",
                  action = "FirstViewMethod",
                  id =
             UrlParameter.Optional
