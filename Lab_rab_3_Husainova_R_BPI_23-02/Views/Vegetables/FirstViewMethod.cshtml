@@ -1,7 +1,8 @@
-﻿
-@{
-    ViewBag.Title = "FirstViewMethod";
-}
-
-<h2>FirstViewMethod</h2>
-
+﻿@model IEnumerable<Lab_rab_3_Husainova_R_BPI_23_02.Models.Vegetable>
+<h2>Список овощей</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <div>@item.Name</div>
+    }
+</ul>
