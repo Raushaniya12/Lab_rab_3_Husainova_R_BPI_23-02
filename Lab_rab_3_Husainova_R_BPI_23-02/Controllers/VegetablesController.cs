@@ -19,7 +19,9 @@ namespace Lab_rab_3_Husainova_R_BPI_23_02.Controllers
                  new Vegetable { Id = 2, Name = "Морковь" },
                  new Vegetable { Id = 3, Name = "Лук" },
                  new Vegetable { Id = 4, Name = "Капуста" },
-                 new Vegetable { Id = 5, Name = "Свекла" }
+                 new Vegetable { Id = 5, Name = "Свекла" },
+                 new Vegetable { Id = 6, Name = "Артишок" },
+                new Vegetable { Id = 7, Name = "Баклажан" }
              };
             // Передаем список в представление в качестве модели
             return View(veggies);
@@ -32,7 +34,9 @@ namespace Lab_rab_3_Husainova_R_BPI_23_02.Controllers
                 new Vegetable { Id = 2, Name = "Морковь" },
                 new Vegetable { Id = 3, Name = "Лук" },
                 new Vegetable { Id = 4, Name = "Капуста" },
-                new Vegetable { Id = 5, Name = "Свекла" }
+                new Vegetable { Id = 5, Name = "Свекла" },
+                new Vegetable { Id = 6, Name = "Артишок" },
+                new Vegetable { Id = 7, Name = "Баклажан" }
             };
 
         var sorted = veggies.OrderBy(v => v.Name).ToList();
