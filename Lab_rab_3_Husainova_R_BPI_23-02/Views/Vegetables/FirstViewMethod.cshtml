@@ -1,8 +1,21 @@
 ﻿@model IEnumerable<Lab_rab_3_Husainova_R_BPI_23_02.Models.Vegetable>
-<h2>Список овощей</h2>
-<ul>
-    @foreach (var item in Model)
+@using System.Linq
+<p>
+    @Html.ActionLink("Список овощей", "FirstViewMethod", "Vegetables") |
+    @Html.ActionLink("Сортировка", "SecondViewMethod", "Vegetables") |
+    @Html.ActionLink("Группировка", "ThirdViewMethod", "Vegetables")
+</p>
+<hr />
+
+<h2> Список овощей</h2>
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
     {
-        <li>@item.Name</li>
+<div>@item.Name</div>
     }
-</ul>
+}
+else
+{
+<p>Список пуст</p>
+}

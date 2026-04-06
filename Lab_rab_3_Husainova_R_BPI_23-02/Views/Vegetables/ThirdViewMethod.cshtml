@@ -1,12 +1,28 @@
-﻿@model IEnumerable<IGrouping<string, Lab_rab_3_Husainova_R_BPI_23_02.Models.Vegetable>>
-<h2>Овощи по первой букве</h2>
-@foreach (var group in Model)
+﻿@model IEnumerable<IGrouping<char, Lab_rab_3_Husainova_R_BPI_23_02.Models.Vegetable>>
+@using System.Linq
+<p>
+    @Html.ActionLink("Список овощей", "FirstViewMethod", "Vegetables") |
+    @Html.ActionLink("Сортировка", "SecondViewMethod", "Vegetables") |
+    @Html.ActionLink("Группировка", "ThirdViewMethod", "Vegetables")
+</p>
+<hr />
+<h2> Cгруппированные овощи по первой букве </h2>
+@if (Model != null && Model.Any())
 {
-    <h3>@group.Key</h3>
-    <ul>
-        @foreach (var item in group)
+    foreach (var group in Model)
+    {
+<h3> @group.Key</h3>
+
+        foreach (var item in group)
         {
-            <li>@item.Name</li>
+<div>@item.Name</div>
         }
-    </ul>
+
+
+
+    }
+}
+else
+{
+<p>Список пуст</p>
 }
